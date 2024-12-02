@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Canvas for Drawing -->
+    <ImageView
+        android:id="@+id/canvasImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <!-- Color Selection Buttons -->
+    <LinearLayout
+        android:id="@+id/colorButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DDDDDD"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/redButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#FF0000"
+            android:contentDescription="Red Color" />
+
+        <Button
+            android:id="@+id/greenButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00FF00"
+            android:contentDescription="Green Color" />
+
+        <Button
+            android:id="@+id/blueButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#0000FF"
+            android:contentDescription="Blue Color" />
+
+        <Button
+            android:id="@+id/blackButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#000000"
+            android:contentDescription="Black Color" />
+    </LinearLayout>
+
+    <!-- Controls for Actions -->
+    <LinearLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#DDDDDD"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/increaseSizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Increase Size" />
+
+        <Button
+            android:id="@+id/decreaseSizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Decrease Size" />
+    </LinearLayout>
+</RelativeLayout>
